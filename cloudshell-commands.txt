@@ -17,14 +17,6 @@ Stop EC2 instances : aws ec2 stop-instances --instance-ids your-instance-id
 Start EC2 instances: aws ec2 start-instances --instance-ids your-instance-id
 Terminate EC2 instances : aws ec2 terminate-instances --instance-ids your-instance-id
 
-Lambda:
-
-List lambda functions : aws lambda list-functions
-Create a Lambda Function: aws lambda create-function --function-name your-functionname --runtime python3.8 --role your-role-arn --handler your-handler-name --zip-file
-fileb://your-function-code.zip
-Create Lambda Function (s3) : aws lambda create-function --function-name yourfunction-name --runtime python3.8 --role your-role-arn --handler your-handler-name
---code S3Bucket= your-s3bucket-name, S3Key=lambda_function.zip
-
 IAM:
 
 List of IAM users: aws iam list-users
